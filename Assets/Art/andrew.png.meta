@@ -1,0 +1,188 @@
+fileFormatVersion: 2
+guid: e6ba7bdef24a1934e9912a9e71f40726
+timeCreated: 1454547495
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: andrew_0
+    21300002: andrew_1
+    21300004: andrew_2
+    21300006: andrew_3
+    21300008: andrew_4
+    21300010: andrew_5
+    21300012: andrew_6
+    21300014: andrew_7
+    21300016: andrew_8
+    21300018: andrew_9
+    21300020: andrew_10
+    21300022: andrew_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 256
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: andrew_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 147
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: andrew_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 148
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: andrew_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 147
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: andrew_3
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 99
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: andrew_4
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 100
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: andrew_5
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 99
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: andrew_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 52
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: andrew_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 52
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: andrew_8
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 52
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: andrew_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 4
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: andrew_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 4
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: andrew_11
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 4
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
