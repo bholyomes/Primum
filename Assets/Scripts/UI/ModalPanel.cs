@@ -18,6 +18,7 @@ public class ModalPanelDetails
     public EventButtonDetails button1Details;
     public EventButtonDetails button2Details;
     public EventButtonDetails button3Details;
+	public EventButtonDetails button4Details;
 
 }
 
@@ -29,10 +30,12 @@ public class ModalPanel : MonoBehaviour
     public Button button1;
     public Button button2;
     public Button button3;
+	public Button button4;
 
     public Text button1Text;
     public Text button2Text;
     public Text button3Text;
+	public Text button4Text;
     public GameObject modalPanelObject;
 
     private static ModalPanel modalPanel;
@@ -57,6 +60,7 @@ public class ModalPanel : MonoBehaviour
         button1.gameObject.SetActive(false);
         button2.gameObject.SetActive(false);
         button3.gameObject.SetActive(false);
+		button4.gameObject.SetActive (false);
 
         this.question.text = details.question;
 
@@ -66,11 +70,14 @@ public class ModalPanel : MonoBehaviour
             this.iconImage.gameObject.SetActive(true);
         }
 
-        button1.onClick.RemoveAllListeners();
-        button1.onClick.AddListener(details.button1Details.action);
-        button1.onClick.AddListener(ClosePanel);
-        button1Text.text = details.button1Details.buttonTitle;
-        button1.gameObject.SetActive(true);
+		if (details.button1Details != null) 
+		{
+			button1.onClick.RemoveAllListeners ();
+			button1.onClick.AddListener (details.button1Details.action);
+			button1.onClick.AddListener (ClosePanel);
+			button1Text.text = details.button1Details.buttonTitle;
+			button1.gameObject.SetActive (true);
+		}
 
         if (details.button2Details != null)
         {
@@ -89,9 +96,18 @@ public class ModalPanel : MonoBehaviour
             button3Text.text = details.button3Details.buttonTitle;
             button3.gameObject.SetActive(true);
         }
+
+		if (details.button4Details != null) 
+		{
+			button4.onClick.RemoveAllListeners();
+			button4.onClick.AddListener(details.button4Details.action);
+			button4.onClick.AddListener(ClosePanel);
+			button4Text.text = details.button4Details.buttonTitle;
+			button4.gameObject.SetActive(true);
+		}
     }
 
-    void ClosePanel()
+    public void ClosePanel()
     {
         modalPanelObject.SetActive(false);
     }
