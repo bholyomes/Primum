@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
     public float moveSpeed;
-    public bool playerCanMove;
+    //public bool playerCanMove;
 
     private bool playerMoving;
     private Vector2 lastMove;
@@ -16,14 +16,14 @@ public class PlayerMovement : MonoBehaviour {
         playerRigidBody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
 
-        playerCanMove = true;
+        //playerCanMove = true;
     }
 
     void Update()
     {
         playerMoving = false;
 
-        if (playerCanMove)
+        if (GameInformation.PlayerControllable)//playerCanMove)
         {
             if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
             {
@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour {
             {
                 playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, 0f);
             }
-        } else if (!playerCanMove)
+        } else if (!GameInformation.PlayerControllable)//!playerCanMove)
         {
             playerRigidBody.velocity = new Vector2(0f, 0f);
         }

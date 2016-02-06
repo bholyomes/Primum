@@ -3,8 +3,6 @@ using System.Collections;
 
 public class PlayerInteraction : MonoBehaviour {
 
-	public string text;
-
 	private bool interactable;
 	private ModalPanel modalPanel;
 	private SpriteRenderer spriteRenderer;
@@ -21,15 +19,18 @@ public class PlayerInteraction : MonoBehaviour {
 		{
 			if(Input.GetKeyUp("e"))
 			{
-				if (modalPanel.modalPanelObject.activeInHierarchy) {
+				if (modalPanel.modalPanelObject.activeInHierarchy)
+                {
 					modalPanel.ClosePanel ();
+                    GameInformation.PlayerControllable = true;
 				} else 
 				{
-					ModalPanelDetails modalPanelDetails = new ModalPanelDetails ();
-					modalPanelDetails.question = text;
-					modalPanelDetails.iconImage = spriteRenderer.sprite;
+                    GameInformation.PlayerControllable = false;
 
-					modalPanel.NewChoice (modalPanelDetails);
+					ModalPanelDetails modalPanelDetails = new ModalPanelDetails ();
+                    modalPanelDetails.question = "Hey " + GameInformation.PlayerName + ". How's it going?"; 
+					modalPanelDetails.iconImage = spriteRenderer.sprite;
+                    modalPanel.NewChoice (modalPanelDetails);
 				}
 			}
 		}
