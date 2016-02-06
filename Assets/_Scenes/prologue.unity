@@ -909,7 +909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5593580c7a5a65c4ea2d3fc95356c0c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 1068817406}
+  text: {fileID: 1068817406}
+  letterPause: 0.01
   iconImage: {fileID: 2080054331}
   button1: {fileID: 1672393964}
   button2: {fileID: 189201054}
@@ -1158,10 +1159,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'test test test test test test test test test test test test test test test
-    test test test test test test test test test test test test test test test test
-    test test test test test test test test test test test test test test test test
-    test test test test test test test test test '
+  m_Text: 
 --- !u!222 &1068817407
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1332,7 +1330,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  playerCanMove: 0
 --- !u!50 &1591205830
 Rigidbody2D:
   serializedVersion: 2

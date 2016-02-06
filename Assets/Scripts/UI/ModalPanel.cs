@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using System.Collections;
 
 public class EventButtonDetails
 {
@@ -12,7 +13,7 @@ public class EventButtonDetails
 public class ModalPanelDetails
 {
     public string title;
-    public string question;
+    public string text;
     public Sprite iconImage;
     public Sprite panelBackgroundImage;
     public EventButtonDetails button1Details;
@@ -25,7 +26,8 @@ public class ModalPanelDetails
 public class ModalPanel : MonoBehaviour
 {
 
-    public Text question;
+    public Text text;
+    public float letterPause = 0.2f;
     public Image iconImage;
     public Button button1;
     public Button button2;
@@ -62,7 +64,8 @@ public class ModalPanel : MonoBehaviour
         button3.gameObject.SetActive(false);
 		button4.gameObject.SetActive (false);
 
-        this.question.text = details.question;
+        text.text = "";
+        StartCoroutine(TypeText(details.text));
 
         if (details.iconImage)
         {
@@ -110,5 +113,15 @@ public class ModalPanel : MonoBehaviour
     public void ClosePanel()
     {
         modalPanelObject.SetActive(false);
+    }
+
+    private IEnumerator TypeText(string message)
+    {
+        foreach (char letter in message.ToCharArray())
+        {
+            text.text += letter;
+            yield return 0;
+            yield return new WaitForSeconds(letterPause);
+        }
     }
 }
