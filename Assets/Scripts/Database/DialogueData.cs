@@ -27,7 +27,6 @@ public class DialogueData {
 				if (node.Attributes ["id"].Value == id) {
 					return node.InnerText;
 				}
-				Debug.Log (node.Name);
 			}
 		}
 		return "error";

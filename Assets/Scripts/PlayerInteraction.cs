@@ -6,6 +6,8 @@ public class PlayerInteraction : MonoBehaviour {
 	public string dialogID;
 
 	private bool interactable;
+	private int interactions = 0;
+
 	private ModalPanel modalPanel;
 	private SpriteRenderer spriteRenderer;
 
@@ -25,6 +27,10 @@ public class PlayerInteraction : MonoBehaviour {
                 {
 					modalPanel.ClosePanel ();
                     GameInformation.PlayerControllable = true;
+
+					interactions++;
+					GameInformation.AddInteraction (this.gameObject.name, interactions);
+
 				} else 
 				{
                     GameInformation.PlayerControllable = false;
