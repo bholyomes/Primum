@@ -122,9 +122,13 @@ public class ModalPanel : MonoBehaviour
     {
         foreach (char letter in message.ToCharArray())
         {
-            text.text += letter;
-            yield return 0;
-            yield return new WaitForSeconds(letterPause);
+			if (modalPanelObject.activeInHierarchy) {
+				text.text += letter;
+				yield return 0;
+				yield return new WaitForSeconds (letterPause);
+			} else {
+				break;
+			}
         }
     }
 }

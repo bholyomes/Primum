@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Dialogue>
-	<text id="1">Hello</text>
-	<text id="2">Sup PlayerName</text>
+	<text id="1">Hey PlayerName! Are you excited to see your family again? I can't believe we've been on this mission for almost 3 years now. Not much longer to go!</text>
+	<text id="2">PlayerName. Everything seems good to go. It should be about a 3 month journey back to Earth.</text>
+	<text id="3">I'm so sick of this ship.</text>
 </Dialogue>
 
