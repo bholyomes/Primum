@@ -25,7 +25,7 @@ public class ModalPanelDetails
 
 public class ModalPanel : MonoBehaviour
 {
-
+    public Text title;
     public Text text;
     public float letterPause = 0.2f;
     public Image iconImage;
@@ -64,7 +64,10 @@ public class ModalPanel : MonoBehaviour
         button3.gameObject.SetActive(false);
 		button4.gameObject.SetActive (false);
 
+        title.text = "";
         text.text = "";
+
+        title.text = details.title;
         StartCoroutine(TypeText(details.text));
 
         if (details.iconImage)

@@ -28,6 +28,7 @@ public class PlayerInteraction : MonoBehaviour {
                     GameInformation.PlayerControllable = false;
 
 					ModalPanelDetails modalPanelDetails = new ModalPanelDetails ();
+                    modalPanelDetails.title = "Andrew Pellegrini";
                     modalPanelDetails.text = "Hey " + GameInformation.PlayerName + ". How's it going?"; 
 					modalPanelDetails.iconImage = spriteRenderer.sprite;
                     modalPanel.NewChoice (modalPanelDetails);
