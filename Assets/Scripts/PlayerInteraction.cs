@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerInteraction : MonoBehaviour {
 
+	public string dialogID;
+
 	private bool interactable;
 	private ModalPanel modalPanel;
 	private SpriteRenderer spriteRenderer;
@@ -28,8 +30,11 @@ public class PlayerInteraction : MonoBehaviour {
                     GameInformation.PlayerControllable = false;
 
 					ModalPanelDetails modalPanelDetails = new ModalPanelDetails ();
-                    modalPanelDetails.title = "Andrew Pellegrini";
-                    modalPanelDetails.text = "Hey " + GameInformation.PlayerName + ". How's it going?"; 
+
+					string temp = DialogueData.LoadFromXML (dialogID);
+					modalPanelDetails.text = temp.Replace ("PlayerName", GameInformation.PlayerName);
+
+					modalPanelDetails.title = this.gameObject.name;
 					modalPanelDetails.iconImage = spriteRenderer.sprite;
                     modalPanel.NewChoice (modalPanelDetails);
 				}
@@ -53,4 +58,5 @@ public class PlayerInteraction : MonoBehaviour {
 			modalPanel.ClosePanel ();
 		}
 	}
+		
 }

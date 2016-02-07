@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Dialogue>
+	<text id="1">Hello</text>
+	<text id="2">Sup PlayerName</text>
+</Dialogue>
+
