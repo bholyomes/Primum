@@ -354,6 +354,8 @@ GameObject:
   - 212: {fileID: 76248453}
   - 61: {fileID: 76248455}
   - 114: {fileID: 76248456}
+  - 95: {fileID: 76248457}
+  - 114: {fileID: 76248458}
   m_Layer: 0
   m_Name: Crew Member 1
   m_TagString: Untagged
@@ -429,6 +431,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogID: 1
+--- !u!95 &76248457
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 76248452}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f80c9e24a17495458215408036b376e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &76248458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 76248452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65fe03c93fab4c8cbc839725813e016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &177490995
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,7 +949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: {fileID: 524862103}
   text: {fileID: 1195966733}
-  letterPause: 0.05
+  letterPause: 0.03
   iconImage: {fileID: 1700293579}
   button1: {fileID: 35557091}
   button2: {fileID: 22223675}
@@ -1122,6 +1152,8 @@ GameObject:
   - 212: {fileID: 726431535}
   - 61: {fileID: 726431534}
   - 114: {fileID: 726431533}
+  - 95: {fileID: 726431537}
+  - 114: {fileID: 726431536}
   m_Layer: 0
   m_Name: Crew Member 2
   m_TagString: Untagged
@@ -1197,6 +1229,34 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &726431536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 726431531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65fe03c93fab4c8cbc839725813e016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &726431537
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 726431531}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f80c9e24a17495458215408036b376e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &924837581
 GameObject:
   m_ObjectHideFlags: 0
@@ -2120,6 +2180,8 @@ GameObject:
   - 212: {fileID: 2067613755}
   - 61: {fileID: 2067613754}
   - 114: {fileID: 2067613753}
+  - 95: {fileID: 2067613757}
+  - 114: {fileID: 2067613756}
   m_Layer: 0
   m_Name: Crew Member 3
   m_TagString: Untagged
@@ -2195,6 +2257,34 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &2067613756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2067613751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65fe03c93fab4c8cbc839725813e016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &2067613757
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2067613751}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f80c9e24a17495458215408036b376e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2075792830
 GameObject:
   m_ObjectHideFlags: 0

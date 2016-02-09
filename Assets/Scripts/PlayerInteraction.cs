@@ -31,9 +31,13 @@ public class PlayerInteraction : MonoBehaviour {
 					interactions++;
 					GameInformation.AddInteraction (this.gameObject.name, interactions);
 
+					SendMessage ("ResetFacing");
+
 				} else 
 				{
                     GameInformation.PlayerControllable = false;
+
+					SendMessage ("FaceThePlayer");
 
 					ModalPanelDetails modalPanelDetails = new ModalPanelDetails ();
 
