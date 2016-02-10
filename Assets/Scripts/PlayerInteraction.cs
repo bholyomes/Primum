@@ -52,18 +52,16 @@ public class PlayerInteraction : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter2D(Collision2D col)
+	void OnTriggerEnter2D(Collider2D col)
 	{
-		if (col.gameObject.tag == "Player") 
-		{
+		if (col.gameObject.tag == "Interaction") {
 			interactable = true;
 		}
 	}
 
-	void OnCollisionExit2D(Collision2D col)
+	void OnTriggerExit2D(Collider2D col)
 	{
-		if (col.gameObject.tag == "Player") 
-		{
+		if (col.gameObject.tag == "Interaction") {
 			interactable = false;
 			modalPanel.ClosePanel ();
 		}
